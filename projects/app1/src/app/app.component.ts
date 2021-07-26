@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TestService } from '../../../../src/app/services/test.service';
+import cloneDeep from 'lodash/cloneDeep';
 
 @Component({
   selector: 'app-root',
@@ -16,8 +17,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.service.getData()
       .subscribe((res: { name: string; city: string }[]) => {
-        this.data = res;
-      })
+        this.data = cloneDeep(res)
+      });
   }
 
   title = 'app1';
