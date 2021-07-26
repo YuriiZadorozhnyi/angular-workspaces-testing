@@ -72,7 +72,8 @@
               "browserTarget": "angular-workspaces-testing:build:production"
             },
             "development": {
-              "browserTarget": "angular-workspaces-testing:build:development"
+              "browserTarget": "angular-workspaces-testing:build:development",
+              "port": 4200
             }
           },
           "defaultConfiguration": "development"
@@ -175,7 +176,8 @@
               "browserTarget": "app1:build:production"
             },
             "development": {
-              "browserTarget": "app1:build:development"
+              "browserTarget": "app1:build:development",
+              "port": 4300
             }
           },
           "defaultConfiguration": "development"
@@ -278,7 +280,8 @@
               "browserTarget": "app2:build:production"
             },
             "development": {
-              "browserTarget": "app2:build:development"
+              "browserTarget": "app2:build:development",
+              "port": 4500
             }
           },
           "defaultConfiguration": "development"

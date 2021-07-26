@@ -498,4 +498,12 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<app-simple-shared></app-simple-shared>
+
+<div *ngFor="let item of data">
+  {{ item.name }} - {{ item.city }}
+</div>
+
+<app-simple-shared></app-simple-shared>
+
 <router-outlet></router-outlet>
